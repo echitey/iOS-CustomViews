@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,12 +42,64 @@
                                     <constraint firstItem="Sq6-hF-YYA" firstAttribute="top" secondItem="jIF-2X-kSN" secondAttribute="top" constant="35" id="pdM-AD-rGS"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bt1-Qy-QQm" customClass="RoundedView" customModule="CustomViews" customModuleProvider="target">
+                                <rect key="frame" x="113" y="105" width="150" height="150"/>
+                                <color key="backgroundColor" red="1" green="0.71760572919077492" blue="0.075136004358329678" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="fKU-eq-wsh"/>
+                                    <constraint firstAttribute="width" constant="150" id="iuT-Qo-MxR"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dev" translatesAutoresizingMaskIntoConstraints="NO" id="6fm-zc-SPv" customClass="RoundedImageView" customModule="CustomViews" customModuleProvider="target">
+                                <rect key="frame" x="31" y="275" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="gPG-K7-AiO"/>
+                                    <constraint firstAttribute="width" constant="150" id="qXf-HL-OJ9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dev" translatesAutoresizingMaskIntoConstraints="NO" id="vPy-4O-ch3" customClass="BluredImageView" customModule="CustomViews" customModuleProvider="target">
+                                <rect key="frame" x="199" y="275" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="DvQ-Jh-SPe"/>
+                                    <constraint firstAttribute="height" constant="150" id="V5m-Fg-vIc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve Randon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqy-Jg-rKB">
+                                <rect key="frame" x="44" y="311" width="124" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="D35-u4-ZgB"/>
+                                    <constraint firstAttribute="width" constant="124" id="xQc-lC-os2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve Randon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sX-wB-xEl">
+                                <rect key="frame" x="212" y="311" width="124" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="Fay-4V-I87"/>
+                                    <constraint firstAttribute="height" constant="78" id="Lfb-SZ-3SI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="3sX-wB-xEl" firstAttribute="top" secondItem="bt1-Qy-QQm" secondAttribute="bottom" constant="56" id="7FH-Va-roZ"/>
+                            <constraint firstItem="cqy-Jg-rKB" firstAttribute="top" secondItem="bt1-Qy-QQm" secondAttribute="bottom" constant="56" id="AsU-uF-Aii"/>
+                            <constraint firstItem="vPy-4O-ch3" firstAttribute="leading" secondItem="6fm-zc-SPv" secondAttribute="trailing" constant="18" id="DGR-hb-zMe"/>
                             <constraint firstAttribute="trailing" secondItem="jIF-2X-kSN" secondAttribute="trailing" id="GfJ-wI-HU7"/>
+                            <constraint firstItem="3sX-wB-xEl" firstAttribute="leading" secondItem="6fm-zc-SPv" secondAttribute="trailing" constant="31" id="GhF-lA-w6t"/>
+                            <constraint firstItem="bt1-Qy-QQm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KG0-4Q-M5Z"/>
+                            <constraint firstItem="vPy-4O-ch3" firstAttribute="top" secondItem="bt1-Qy-QQm" secondAttribute="bottom" constant="20" id="LOe-Vi-q0e"/>
+                            <constraint firstItem="bt1-Qy-QQm" firstAttribute="top" secondItem="jIF-2X-kSN" secondAttribute="bottom" constant="30" id="dhG-Sn-BP4"/>
                             <constraint firstItem="jIF-2X-kSN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iVX-Ys-MN5"/>
+                            <constraint firstItem="6fm-zc-SPv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="knf-Ys-w13"/>
                             <constraint firstItem="jIF-2X-kSN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lDC-e7-mav"/>
+                            <constraint firstItem="cqy-Jg-rKB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="qGb-uT-M9i"/>
+                            <constraint firstItem="6fm-zc-SPv" firstAttribute="top" secondItem="bt1-Qy-QQm" secondAttribute="bottom" constant="20" id="rgn-M9-3GX"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -55,4 +108,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dev" width="411" height="400"/>
+    </resources>
 </document>
