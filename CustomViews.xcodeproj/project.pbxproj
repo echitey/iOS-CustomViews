@@ -18,6 +18,7 @@
 		47B6DE641E79C56F00E91F45 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6DE631E79C56F00E91F45 /* RoundedImageView.swift */; };
 		47B6DE661E79C58500E91F45 /* BluredImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6DE651E79C58500E91F45 /* BluredImageView.swift */; };
 		47B6DE681E7B020C00E91F45 /* fancy.png in Resources */ = {isa = PBXBuildFile; fileRef = 47B6DE671E7B020C00E91F45 /* fancy.png */; };
+		47B6DE6A1E7B02CE00E91F45 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 47B6DE691E7B02CE00E91F45 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		47B6DE631E79C56F00E91F45 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		47B6DE651E79C58500E91F45 /* BluredImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluredImageView.swift; sourceTree = "<group>"; };
 		47B6DE671E7B020C00E91F45 /* fancy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fancy.png; sourceTree = "<group>"; };
+		47B6DE691E7B02CE00E91F45 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				47B6DE371E79B36900E91F45 /* LaunchScreen.storyboard */,
 				47B6DE671E7B020C00E91F45 /* fancy.png */,
 				47B6DE3A1E79B36900E91F45 /* Info.plist */,
+				47B6DE691E7B02CE00E91F45 /* README.md */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B6DE6A1E7B02CE00E91F45 /* README.md in Sources */,
 				47B6DE661E79C58500E91F45 /* BluredImageView.swift in Sources */,
 				47B6DE311E79B36800E91F45 /* MainVC.swift in Sources */,
 				47B6DE641E79C56F00E91F45 /* RoundedImageView.swift in Sources */,
